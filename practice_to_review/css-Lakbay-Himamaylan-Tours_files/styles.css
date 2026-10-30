@@ -1,0 +1,472 @@
+/* =================================
+   GENERAL WEBSITE DESIGN
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #183451;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    padding: 25px;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #19395f;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* =================================
+   HEADER AND HERO SECTION
+================================= */
+
+.site-header {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    width: 350px;
+    max-width: 85%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.78);
+    color: white;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.hero-content p {
+    color: white;
+    margin: 8px 0;
+}
+
+.eyebrow {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.button {
+    background: #ffffff;
+    padding: 10px;
+}
+
+.hero-link {
+    display: inline-block;
+    background: white;
+    color: #19395f;
+    padding: 8px 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-link:hover {
+    background: #dce8f2;
+}
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
+nav {
+    background-color: #19395f;
+    padding: 12px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: #f4cf70;
+}
+
+/* =================================
+   HOME SECTION
+================================= */
+
+#home {
+    background-color: #edf4f8;
+    border-left: 4px solid #19395f;
+    margin: 15px 20px;
+    padding: 18px;
+}
+
+#home h2 {
+    margin-top: 0;
+}
+
+#home p {
+    color: #333333;
+}
+
+.button {
+    color: #19395f;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+#about {
+    padding: 25px;
+    background-color: white;
+}
+
+#about h2 {
+    margin-top: 0;
+}
+
+/* =================================
+   TOUR PACKAGES
+================================= */
+
+#packages {
+    padding: 25px;
+}
+
+#packages h2,
+#packages h3 {
+    margin-top: 0;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.tour-card {
+    border: 1px solid #788697;
+    background-color: #f1f3f6;
+    overflow: hidden;
+    position: relative;
+}
+
+.tour-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.tour-card h4 {
+    margin: 10px;
+    font-size: 15px;
+}
+
+.tour-card p {
+    margin: 10px;
+    color: #333333;
+}
+
+.tour-card:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+/* =================================
+   TOUR PACKAGE COMPARISON TABLE
+================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    padding: 8px 5px;
+    color: #19395f;
+}
+
+th, td {
+    border: 1px solid #788697;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e5eaf0;
+    color: #19395f;
+    font-weight: bold;
+}
+
+td {
+    background-color: white;
+}
+
+/* =================================
+   TRAVEL GUIDE
+================================= */
+
+#guide {
+    padding: 25px;
+}
+
+#guide h2 {
+    margin-top: 0;
+}
+
+#guide .intro {
+    font-weight: bold;
+}
+
+#guide > .guide-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.guide-card article,
+#guide article.guide-card {
+    background-color: #f1f3f6;
+    border: 1px solid #788697;
+    padding: 15px;
+}
+
+.guide-card h3 {
+    font-size: 15px;
+}
+
+.guide-card ul,
+.guide-card ol {
+    padding-left: 25px;
+}
+
+/* =================================
+   WHY EXPLORE SECTION
+================================= */
+
+#why-explore {
+    padding: 25px;
+    background-color: white;
+}
+
+#why-explore h2 {
+    margin-top: 0;
+}
+
+/* =================================
+   CONTACT SECTION
+================================= */
+
+#contact {
+    background-color: #edf4f8;
+    margin: 15px;
+    padding: 20px;
+}
+
+#contact h2 {
+    margin-top: 0;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+form {
+    width: 100%;
+}
+
+form p {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #788697;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #19395f;
+}
+
+fieldset {
+    border: 1px solid #dce3eb;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+legend {
+    color: #19395f;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+input[type="radio"] {
+    accent-color: #19395f;
+}
+
+form button {
+    background-color: #19395f;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #315d8c;
+}
+
+/* CONTACT INFORMATION BOX */
+
+.contact-info {
+    background-color: white;
+    border: 1px solid #788697;
+    padding: 18px;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+/* =================================
+   RESPONSIVE / MOBILE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 230px;
+    }
+
+    .hero-content {
+        top: 15px;
+        left: 12px;
+        width: 90%;
+        padding: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .tour-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #guide > .guide-card {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .hero-content h1 {
+        font-size: 17px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+P    table {
+        font-size: 10px;
+    }
+}
